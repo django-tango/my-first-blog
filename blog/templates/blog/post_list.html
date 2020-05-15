@@ -1,22 +1,26 @@
 <html>
-    <head>
-        <title>Дневник танго-любителя</title>
-    </head>
-    <body>
-        <div>
-            <h1><a href="/">Дневник танго-любителя</a></h1>
-        </div>
+<head>
+    <title>Дневник танго-любителя</title>
+</head>
+<body>
+<div>
+    <h1><a href="/">Дневник танго-любителя</a></h1>
+</div>
 
-        <div>
-            <p>Дата: 15.05.2020, 12:14</p>
-            <h2><a href="">Начало</a></h2>
-            <p>Все имеет начало. Что начала не имеет, то не все.</p>
-        </div>
+<div>
+    <p>Дата: 15.05.2020, 12:14</p>
+    <h2><a href="">Начало</a></h2>
+    <p>Все имеет начало. Что начала не имеет, то не все.</p>
+</div>
 
+<div>
+    {% for post in posts %}
         <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">Продолжение</a></h2>
-            <p>Будет...</p>
+            <p>Опубликовано: {{ post.published_date }}</p>
+            <h1><a href="">{{ post.title }}</a></h1>
+            <p>{{ post.text|linebreaksbr }}</p>
         </div>
-    </body>
+    {% endfor %}
+</div>
+</body>
 </html>
