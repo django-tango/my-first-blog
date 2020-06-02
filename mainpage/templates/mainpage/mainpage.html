@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Novotango</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'css/mainpage.css' %}">
+</head>
+<body>
+<div class="container">
+    <header class="site-header">
+        <h1>Аргентинское танго Новороссийск-Анапа</h1>
+        <p>"Танго - это тайна, которую танцуют двое."</p>
+        <img src="{% static 'images/mainpage.png' %}" alt="Танго пара" class="img-responsive" width="40%">
+    </header>
+
+    <section class="features">
+        <h2>Почему я?</h2>
+        <p class="feature-kitten">Я сам искал хороших людей и культурный отдых, теперь мы ждем тебя в свою компанию</p>
+        <p class="feature-train">Опытные и отзывчивые преподаватели - привет, дорогой гость!</p>
+        <p class="feature-cat">В танго больше 10 лет и с каждым годом все интереснее</p>
+    </section>
+
+    <section class="skills">
+        <h2>Чему вы научитесь?</h2>
+        <ul class="skills-list">
+            <li class="skills-item">чувствовать свое тело и развивать пластичность;</li>
+            <li class="skills-item standard">обниматься;</li>
+            <li class="skills-item standard">слушать, слышать, находить компромиссы;</li>
+            <li class="skills-item vip">наслаждаться страстной аргентинской музыкой в движении;</li>
+            <li class="skills-item vip">танцевать танго в любой точке земного шара.</li>
+        </ul>
+    </section>
+
+    <footer class="site-footer">
+        <p>© Novotango, 2020</p>
+        <p>Зовите ГААААААЛЮ!</p>
+    </footer>
+</div>
+</body>
+</html>
